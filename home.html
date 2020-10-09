@@ -1,14 +1,278 @@
 <!doctype html>
 
 <html>
-  <head>
-    <title>INSERT TITLE HERE!</title>
-    <link rel="stylesheet" href="index.css">
-    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-  </head>
 
-  <body>
-    <!-- TODO: put your HTML code here! -->
-  </body>
+<head>
+  <title>Personas & Storyboarding</title>
+  <link rel="stylesheet" href="index.css">
+  <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body>
+  <center>
+    <h1>A UX Analysis of the AmazonBasics Remote-Controlled Tower Fan</h1>
+
+    <div class="bordered main-section">
+      <h2>Product Description and Diagram</h2>
+      <div class="grid-container">
+        <div id="product-overview" class="grid-container bordered">
+          <h3>Product Overview</h3>
+          <ul>
+            <li>Oscillating Tower Fan</li>
+            <li>Extensive Settings</li>
+            <li>Includes Remote</li>
+            <li>Icon-Based Light-up Display</li>
+            <li>1-7 hour Timer with Binary Display (1h, 2h, 4h switches)</li>
+          </ul>
+        </div>
+
+        <div id="settings-overview" class="bordered">
+          <h3>Settings</h3>
+          <div class="bordered setting" style="border-color:#FF8000;">
+            <span class="setting-name">Power</span>
+            <span class="setting-detail">Off &#8226; On</span>
+          </div>
+          <div class="bordered setting" style="border-color:#FFFF00;">
+            <span class="setting-name">Mode</span>
+            <span class="setting-detail">Normal &#8226; Natural &#8226; Night</span>
+          </div>
+          <div class="bordered setting" style="border-color:#80FF00;">
+            <span class="setting-name">Strength</span>
+            <span class="setting-detail">Low &#8226; Medium &#8226; High</span>
+          </div>
+          <div class="bordered setting" style="border-color:#FF00FF;">
+            <span class="setting-name">Swivel / Oscillation</span>
+            <span class="setting-detail">Off &#8226; On</span>
+          </div>
+          <div class="bordered setting" style="border-color:#00FFFF;">
+            <span class="setting-name">Timer</span>
+            <span class="setting-detail">Off &#8226; 1-7 Hours</span>
+          </div>
+        </div>
+
+        <div id="sketch" class="bordered">
+          <img src="sketch.png" alt="Product Sketch">
+        </div>
+      </div>
+    </div>
+
+    <div class="bordered main-section">
+      <h2>User Interviews and Observations</h2>
+      <div class="bordered subsection">
+        <h3>The Users: Key Observations</h3>
+        <div class="grid-container">
+          <div class="bordered user-1">
+            <h4 class="user-header">User 1</h4>
+            <p class="answer">Aimed to make use of the fan's extensive settings. Used copious trial & error in order to find the perfect configuration.</p>
+          </div>
+          <div class="bordered user-2">
+            <h4 class="user-header">User 2</h4>
+            <p class="answer">Found the interface largely unfamiliar, unclear, and confusing. Strongly preferred the on-fan interface over the remote.</p>
+          </div>
+          <div class="bordered user-3">
+            <h4 class="user-header">User 3</h4>
+            <p class="answer">Owns a similar fan, albeit with a somewhat different interface. Was able to master the interface quickly, with minimal confusion.</p>
+          </div>
+        </div>
+      </div>
+      <div class="bordered">
+        <h3>Interview Questions</h3>
+        <div class="bordered question">
+          <h4>On a scale from 1 (least) to 10 (most), how approachable did you initially find the interface? Why?</h4>
+          <div class="grid-container">
+            <div class="bordered user-1">
+              <p class="answer">7. I was pretty comfortable with the look of it, but I knew I would probably get some things wrong at first.</p>
+            </div>
+            <div class="bordered user-2">
+              <p class="answer">5. There were only five buttons, so I felt that it would not be too challenging to learn. But, it was unclear what each button's purpose was, and it didn't help that two of them look the same.</p>
+            </div>
+            <div class="bordered user-3">
+              <p class="answer">7. It mostly fit my expectations, but there were a couple of buttons that were a mystery to me at first.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bordered question">
+          <h4>Compared to your initial impression of the interface, did any part(s) of the interface catch you by surprise? If so, which part(s) and why?</h4>
+          <div class="grid-container">
+            <div class="bordered user-1">
+              <p class="answer">I'm still not quite sure why the "mode" setting is necessary, but I wouldn't say I was "suprised" by it per se. Before you told me, I couldn't really tell what that button was doing.</p>
+            </div>
+            <div class="bordered user-2">
+              <p class="answer">The display was smaller than I thought it would be, and I was not expecting it to turn off after I didn't press any buttons for a few seconds. The way the timer was displayed felt weird too.</p>
+            </div>
+            <div class="bordered user-3">
+              <p class="answer">I was pleasantly surprised that when I turned it off and on again, it kept the same settings I had before.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bordered question">
+          <h4>On a scale from 1 (easy) to 10 (hard), how difficult was it to quickly grasp the fan's functionality? Why?</h4>
+          <div class="grid-container">
+            <div class="bordered user-1">
+              <p class="answer">6. I had to go through the settings a couple times to get the hang of it. I wish the display had words on it instead of icons that I needed to interpret.</p>
+            </div>
+            <div class="bordered user-2">
+              <p class="answer">6. There wasn't a ton to grasp, but I couldn't tell what some of the icons meant. And to be honest, I would still have to guess which button is which [between "strength" and "mode"].</p>
+            </div>
+            <div class="bordered user-3">
+              <p class="answer">3. It wasn't too bad at all, other than the buttons being hard to tell apart. I was able to grasp everything within a minute or so.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bordered question">
+          <h4>Were there any specific elements of the interface that made it easy to achieve your desired settings? If so, which one(s) and why?</h4>
+          <div class="grid-container">
+            <div class="bordered user-1">
+              <p class="answer">Overall, it wasn't too bad once I got the hang of it. But, at first it took a little more work than I expected.</p>
+            </div>
+            <div class="bordered user-2">
+              <p class="answer">The timer and swivel buttons were pretty obvious, but the timer was pretty much ruined by the way it's displayed.</p>
+            </div>
+            <div class="bordered user-3">
+              <p class="answer">Nothing in particular, although, like I said before, it's nice that my settings were maintained after I turned it off.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bordered question">
+          <h4>Were there any specific elements of the interface that made it difficult to achieve your desired settings? If so, which one(s) and why?</h4>
+          <div class="grid-container">
+            <div class="bordered user-1">
+              <p class="answer">Before you told me what each icon meant, I had to put my hand in front of the fan to test for myself, since the icons were unclear. Especially for the "mode" setting.</p>
+            </div>
+            <div class="bordered user-2">
+              <p class="answer">The icons were so small that they were hard to see from across the room when I was using the remote. Also, the display turned off quickly so I couldn't see my settings.</p>
+            </div>
+            <div class="bordered user-3">
+              <p class="answer">The timer should not be a cycle; I overshot the time I wanted and had to press the button 7 more times to decrease it by an hour.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bordered question">
+          <h4>Were there any differences between your experience using the on-fan interface, and using the remote? If so, please elaborate.</h4>
+          <div class="grid-container">
+            <div class="bordered user-1">
+              <p class="answer">Not really. If I <em>had</em> to think of something, when I turned on the oscillation with the button on the fan, the buttons of course started moving, which made it a little harder to use.</p>
+            </div>
+            <div class="bordered user-2">
+              <p class="answer">I like the idea of the remote, but it was harder to use because I couldn't see the icons very well from across the room. The remote should have its own display of the current settings.</p>
+            </div>
+            <div class="bordered user-3">
+              <p class="answer">The remote is a really nice feature. I didn't find either one too different from the other.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bordered question">
+          <h4>Are there any changes to the interface that you would suggest? If so, which one(s) and why?</h4>
+          <div class="grid-container">
+            <div class="bordered user-1">
+              <p class="answer">The display, and the buttons, should definitely have words instead of just the icons. It looks cool the way it is, but it's more confusing.</p>
+            </div>
+            <div class="bordered user-2">
+              <p class="answer">The display should remain on by default, and there should be a button to turn it on and off. The icons should be bigger and the remote should have its own display. The timer should be displayed as one number.</p>
+            </div>
+            <div class="bordered user-3">
+              <p class="answer">The timer should have smaller increments than 1 hour, and should have increase and decrease functionality instead of a cycle.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="bordered main-section">
+      <h2>User Personas</h2>
+      <div class="grid-container">
+        <div id="persona-1" class="bordered">
+          <h3>Straightforward Samantha</h3>
+          <img src="samantha.jpg" alt="Straightforward Samantha" style="min-width: 50%; max-width:100%">
+          <p class="persona-caption">Samantha is used to using a "regular fan" and is unconcerned with all of the "fancy settings." She is simply too warm and uncomfortable; she wants something that gets the job done without being needlessly
+            complicated.</p>
+        </div>
+        <div id="persona-2" class="bordered">
+          <h3>Precise Pete</h3>
+          <img src="pete.jpg" alt="Precise Pete" style="min-width: 50%; max-width:100%">
+          <p class="persona-caption">Pete uses his fan almost every night; it is like a routine for him. He prioritizes a fan that caters to his exact specifications, and is willing to go through multiple steps to make that happen. He wants total
+            control over the fan's settings, even at the cost
+            of some extra effort.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bordered main-section">
+      <h2>User Storyboard: <em>Precise Pete</em></h2>
+      <div class="grid-container">
+        <div id="sb-1" class="bordered">
+          <img src="s1.jpg" alt="Clock showing 9:30" class="sb-image">
+          <!-- Source: https://www.teacherfiles.com/clipart/time/analog_clock_0930.jpg -->
+          <p class="sb-caption">It is 9:30 PM, and Pete wants to do 30 minutes of homework in his bed and then go to sleep, as is his nightly routine.</p>
+        </div>
+        <div id="sb-2" class="bordered">
+          <img src="s2.jpg" alt="Thermometer showing 75 degrees Fahrenheit" class="sb-image">
+          <!-- Source: https://cdn1.bigcommerce.com/server2300/83565/products/174/images/520/PP-12100__58104.1294779039.500.659.jpg?c=2 -->
+          <p class="sb-caption">As usual, Pete's room is a bit too warm for his comfort.</p>
+        </div>
+        <div id="sb-3" class="bordered">
+          <img src="s3.jpg" alt="Pressing the power button" class="sb-image">
+          <p class="sb-caption">Pete walks over to his fan and turns it on.</p>
+        </div>
+        <div id="sb-4" class="bordered">
+          <img src="s4.jpg" alt="Hovering over strength and mode buttons" class="sb-image">
+          <p class="sb-caption">Even though he's had this fan for a while, he still gets tripped up by the similar look of the <em>strength</em> and <em>mode</em> buttons.</p>
+        </div>
+        <div id="sb-5" class="bordered">
+          <img src="s5.jpg" alt="Putting hand in front of fan" class="sb-image">
+          <p class="sb-caption">Pete toggles through the <em>strength</em> and <em>mode</em> settings with his hand in front of the fan to choose the best ones.</p>
+        </div>
+        <div id="sb-6" class="bordered">
+          <img src="s6.jpg" alt="Sitting down" class="sb-image">
+          <p class="sb-caption">Pete grabs the remote, sits down on his bed, and prepares to begin his homework.</p>
+        </div>
+        <div id="sb-7" class="bordered">
+          <img src="s7.jpg" alt="Turning on oscillation" class="sb-image">
+          <p class="sb-caption">Noticing that the fan is not pointed directly at him, Pete decides to adjust its direction by turning on the <em>swivel</em> setting.</p>
+        </div>
+        <div id="sb-8" class="bordered">
+          <img src="s8.jpg" alt="Fan facing in right direction" class="sb-image">
+          <p class="sb-caption">"That's better!" Once the fan is facing the right way, Pete turns off the <em>swivel</em> setting.</p>
+        </div>
+        <div id="sb-9" class="bordered">
+          <img src="s9.jpg" alt="Pressing the strength button" class="sb-image">
+          <p class="sb-caption">Now a bit further away from the fan, Pete adjusts the <em>strength</em> setting to increase its intensity.</p>
+        </div>
+        <div id="sb-10" class="bordered">
+          <img src="s10.jpg" alt="New settings" class="sb-image">
+          <p class="sb-caption">Pete is done with his homework, and adjusts the fan to his "sleep settings." He turns on oscillation, night mode, and a 7-hour timer to conserve energy.</p>
+        </div>
+        <div id="sb-11" class="bordered">
+          <img src="s11.jpg" alt="Sleeping" class="sb-image">
+          <!-- Source: https://www.pinclipart.com/picdir/middle/285-2859181_sleep-clipart-zzz-png-download.png -->
+          <p class="sb-caption">Pete goes to sleep. Night mode keeps the fan quiet, and the oscillation provides a nice, level cooling effect across the entire room without being overwhelming.</p>
+        </div>
+        <div id="sb-12" class="bordered">
+          <img src="s12.jpg" alt="Fan off" class="sb-image">
+          <p class="sb-caption">Pete wakes up 10 hours later. Due to the 7-hour timer he had set previously, the fan is turned off when he awakens.</p>
+        </div>
+      </div>
+    </div>
+  </center>
+
+  <footer>
+    <p>
+      <strong>Note:</strong> Interview responses are not exact quotes from the users; they are paraphrased and shortened into summaries. Users were told to at least experiment with each setting in order to experience the entirety of the interface
+      (otherwise, the users probably would not have tried the timer in these short interviews).
+    </p>
+    <p>
+      <strong>Note:</strong> This interface is well-suited for both public and private view. User interviews and observations were conducted in public view; the storyboard takes place in private view because that scenario better aligns with Precise
+      Pete's archetypal use-case. The photos in the storyboard are my own recreation of Precise Pete's hypothetical usage of the product.
+    </p>
+  </footer>
+</body>
+
 </html>
